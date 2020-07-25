@@ -3,7 +3,6 @@ let newCorona = document.querySelector(".new_corona");
 
 let totalCaseBox = document.querySelectorAll(".total_casebox");
 let newCaseBox = document.querySelectorAll(".new_casebox");
-// totalcase를 forEach해서 넣자.
 
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
   method: "GET",
