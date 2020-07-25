@@ -19,7 +19,7 @@ function loadCorona() {
           <div class="corona_case">${item.cases}명</div>`;
         })
         .join("");
-      atTime(stat);
+      atTime();
     })
 
     .catch((err) => {
@@ -29,7 +29,7 @@ function loadCorona() {
 
 loadCorona();
 
-function atTime(stat) {
+function atTime() {
   let time = new Date();
   let Year = time.getFullYear();
   let month = time.getMonth();
