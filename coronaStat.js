@@ -1,8 +1,8 @@
-let totalCorona = document.querySelector(".total__corona");
-let newCorona = document.querySelector(".new_corona");
+const totalCorona = document.querySelector(".total__corona");
+const newCorona = document.querySelector(".new_corona");
 
-let totalCaseBox = document.querySelectorAll(".total_casebox");
-let newCaseBox = document.querySelectorAll(".new_casebox");
+const totalCaseBox = document.querySelectorAll(".total_casebox");
+const newCaseBox = document.querySelectorAll(".new_casebox");
 
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
   method: "GET",

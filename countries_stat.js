@@ -20,8 +20,8 @@ function loadCorona() {
 }
 
 function coronaStat(stat) {
-  let countriesStat = stat.countries_stat;
-  let coronaStat = document.querySelector(".corona_stat");
+  const countriesStat = stat.countries_stat;
+  const coronaStat = document.querySelector(".corona_stat");
   let coronaStatHTML = countriesStat
     .map((item) => {
       return `<div class="corona_conutries">${item.country_name}</div>
