@@ -16,3 +16,4 @@ function atTime() {
 
   return (atTime.innerText = date);
 }
+setInterval(atTime, 1000);

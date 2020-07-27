@@ -29,7 +29,6 @@ function coronaStat(stat) {
     })
     .join("");
   atTime();
-  setInterval(atTime, 1000);
   coronaStat.innerHTML = coronaStatHTML;
 }
 
