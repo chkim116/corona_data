@@ -19,12 +19,17 @@ function loadCorona() {
     });
 }
 
+let countriesStat;
+
 function coronaStat(stat) {
-  const countriesStat = stat.countries_stat;
+  countriesStat = stat.countries_stat;
+  for (i = 0; i < countriesStat.length; i++) {
+    countriesStat[i].id = [i + 1];
+  }
   const coronaStat = document.querySelector(".corona_stat");
   let coronaStatHTML = countriesStat
     .map((item) => {
-      return `<div class="corona_conutries">${item.country_name}</div>
+      return `<div class="corona_conutries"> <span>${item.id}</span> ${item.country_name}</div>
     <div class="corona_case">${item.cases}명</div>`;
     })
     .join("");
